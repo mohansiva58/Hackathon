@@ -1,0 +1,34 @@
+const { MongoClient } = require('mongodb');
+
+// Replace the following with your MongoDB connection string.
+const uri = 'mongodb://localhost:27017';
+
+// Create a new MongoClient
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
+async function run() {
+    try {
+        // Connect to the MongoDB cluster
+        await client.connect();
+        console.log('Connected to MongoDB successfully!');
+
+        // Define the database and collection
+        const database = client.db('testdb');
+        const collection = database.collection('testcollection');
+
+        // Example: Insert a document
+        const result = await collection.insertOne({ name: 'Alice', age: 25 });
+        console.log('Inserted document:', result.insertedId);
+
+        // Example: Find a document
+        const document = await collection.findOne({ name: 'Alice' });
+        console.log('Found document:', document);
+    } catch (error) {
+        console.error('Error connecting to MongoDB:', error);
+    } finally {
+        // Close the connection
+        await client.close();
+    }
+}
+
+run().catch(console.dir);

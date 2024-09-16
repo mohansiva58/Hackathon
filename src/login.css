@@ -1,0 +1,140 @@
+/* General styling for the login page */
+
+body{
+  background:url('C:\Users\bhanu\Login1\src\ui.jpg');
+  
+}
+
+.login-page{
+  display: flex;
+  flex-direction: row;
+  
+  justify-content:space-evenly;
+}
+
+
+.ride-on-container{
+  padding-top: 530px;
+  padding-left: 90px;
+}
+
+.ride-on-btn {
+  background-color: #ffcc00; /* Yellow color for the button */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+
+  padding: 10px 20px;
+  
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+ 
+}
+
+/* Ensure the logo container fits within the specified dimensions */
+.logo {
+  width: 960px; /* Width of the container */
+  height: 489px; /* Height of the container */
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+  align-items: center;
+  
+  
+}
+
+/* Styling for the logo image */
+.logo img {
+  max-width: 100%; /* Make sure the image scales within the container */
+  max-height: 100%; /* Make sure the image scales within the container */
+  object-fit: contain; /* Maintain aspect ratio while fitting the container */
+  border-radius: 10px;
+}
+
+
+.ride-on-btn:hover {
+  background-color: #007bff; /* Darker blue when hovered */
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+
+   height: 66vh;
+   padding-top: 90px;
+    
+    
+  }
+  .login-page{
+    border-radius: 10px;
+  }
+  .login-form {
+    background-color: rgba(255, 255, 255, 0.2);
+    
+    padding: 40px;
+    border-radius:  10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  .login-form svg:hover {
+    color: #ffcc00; /* Change color on hover */
+    opacity: 1;     /* Increase opacity to fully opaque */
+}
+
+  .login-form h2:hover{
+    color:#ffcc00;
+    opacity: 1;
+  }
+  .login-form label:hover{
+    color:#ffcc00;
+  }
+  .login-form p:hover{
+    color:#ffcc00;
+  }
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ffcc00
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .input-group input:focus {
+    border-color: #ffcc00; /* Highlight input on focus */
+    outline: none;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+  }
+  .forgot-password a {
+    color:#ffcc00; /* Set the text color to black */
+    text-decoration: none; /* Optionally remove underline from link */
+}
+.login-footer a{
+  color:#ffcc00;
+}
